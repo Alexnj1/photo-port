@@ -3,7 +3,7 @@ import { capitalizeFirstLetter } from "../../utils/helpers";
 
 function Nav(props) {
   const { categories = [], setCurrentCategory, currentCategory } = props; //destructure the props that were passed from App
-  useEffect(() => { // tells the hook to re render the component on a vhange of a certain value, in this case the current category
+  useEffect(() => { // tells the hook to re render the component on a change of a certain value, in this case the current category
     document.title = capitalizeFirstLetter(currentCategory.name)
   }, [currentCategory])
   return (
@@ -37,6 +37,7 @@ function Nav(props) {
               <span
                 onClick={() => { // sets the current category to whichever the user clicks
                   setCurrentCategory(category);
+                  // console.log(category);
                 }}
               >
                 {capitalizeFirstLetter(category.name)}
