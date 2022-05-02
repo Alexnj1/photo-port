@@ -1,7 +1,7 @@
 {
   "name": "photo-port",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "homepage": "http://alexnj1.github.io/photo-port",
   "dependencies": {
     "@testing-library/user-event": "^13.5.0",
